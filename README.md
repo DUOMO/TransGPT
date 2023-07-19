@@ -179,7 +179,8 @@ sh pt.sh
 
 ##### Script
 ```
-??
+conda activate transgpt
+sh pt.sh
 ```
 
 ## 开源数据集
