@@ -188,8 +188,8 @@ conda activate transgpt
 sh sft.sh
 ```
 说明：
-- pt训练脚本：采用了MedicalGPT提供的[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)]脚本。
-- sft脚本：采用了MedicalGPT提供的[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)脚本。
+- pt训练代码：采用了MedicalGPT提供的[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)代码。
+- sft训练代码：采用了MedicalGPT提供的[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)代码。
 ## 开源数据集
 ### 通用数据集
 
