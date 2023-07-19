@@ -167,8 +167,8 @@ conda activate transgpt
 
 ##### Script
 ```
-conda activate ??
-??
+conda activate transgpt
+sh pt.sh
 ```
 
 #### Instruction Tuning
