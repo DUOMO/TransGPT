@@ -166,7 +166,8 @@ conda activate transgpt
 
 
 ##### Script
-* [[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)]
+* 下载pt训练代码[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)]
+* 下载sft.sh脚本[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/run_sft.sh)]
 ```
 conda activate transgpt
 sh pt.sh
@@ -179,6 +180,8 @@ sh pt.sh
 
 
 ##### Script
+* 下载sft训练代码[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)]
+* 下载sft.sh脚本[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/run_sft.sh)]
 ```
 conda activate transgpt
 sh sft.sh
@@ -209,7 +212,47 @@ sh sft.sh
 ## 推荐GPUs
 * Pre-training: 8xA100 (80G)
 * Instruction Tuning: 8xA40 (45G)
-* Inference: ??
+* Inference:
+Install package:
+```
+pip install sentencepiece
+pip install transformers>=4.28.0
+```
+```
+import torch
+import transformers
+from transformers import LlamaTokenizer, LlamaForCausalLM
+
+def generate_prompt(text):
+    return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+{text}
+
+### Response:"""
+
+checkpoint="DUOMO-Lab/TransGPT-v0"
+tokenizer = LlamaTokenizer.from_pretrained(checkpoint)
+model = LlamaForCausalLM.from_pretrained(checkpoint).half().cuda()
+model.eval()
+
+text = '我想了解如何申请和更新驾驶证？'
+prompt = generate_prompt(text)
+input_ids = tokenizer.encode(prompt, return_tensors='pt').to('cuda')
+
+
+with torch.no_grad():
+    output_ids = model.generate(
+        input_ids=input_ids,
+        max_new_tokens=1024,
+        temperature=1,
+        top_k=20,
+        top_p=0.9,
+        repetition_penalty=1.15
+    ).cuda()
+output = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+print(output.replace(text, '').strip())
+```
 
 Logo由[DreamStudio](https://beta.dreamstudio.ai/generate)生成🙏.
 
