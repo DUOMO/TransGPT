@@ -141,7 +141,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 | 模型          | 下载链接                              | 备注                                                                             |
 |:------------|-----------------------------------|--------------------------------------------------------------------------------|
-| TransGPT-7B | [link](https://huggingface.co/DUOMO-Lab/TransGPT-v0) | Fine-tuned on the instruction-tuning data from part of [our data](https://?) ) |
+| TransGPT-7B | [DUOMO-Lab/TransGPT-v0](https://huggingface.co/DUOMO-Lab/TransGPT-v0) | Fine-tuned on the instruction-tuning data from part of [our data](https://?) ) |
 
 
 ## 环境部署
@@ -167,7 +167,7 @@ conda activate transgpt
 
 ##### Script
 * 下载pt训练代码[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)]
-* 下载sft.sh脚本[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/run_sft.sh)]
+* 下载pt.sh脚本[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/run_sft.sh)]
 ```
 conda activate transgpt
 sh pt.sh
