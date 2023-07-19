@@ -166,8 +166,8 @@ conda activate transgpt
 
 
 ##### Script
-* 下载pt训练代码[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)]
-* 下载pt.sh脚本[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/run_sft.sh)]
+* 下载pt训练代码[[pretraining.py](https://github.com/shibing624/MedicalGPT/blob/main/pretraining.py)]
+* 下载pt.sh脚本[[run_pt.sh](https://github.com/shibing624/MedicalGPT/blob/main/run_pt.sh)]
 ```
 conda activate transgpt
 sh pt.sh
