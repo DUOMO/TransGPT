@@ -67,8 +67,10 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 ![img.png](figs/img.png)
 
 - 对话数据生成方法
+  1. 从pdf、docx，doc格式文件中提取文档
+  2. 利用LLM根据文档生成对话数据
   
-  [利用LLM根据文档生成对话数据](https://github.com/threeColorFr/LLMforDialogDataGenerate)
+  具体链接 -> [LLMforDialogDataGenerate](https://github.com/threeColorFr/LLMforDialogDataGenerate)
 
 ## TransGPT功能及示例输出
 
