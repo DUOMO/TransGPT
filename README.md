@@ -66,6 +66,9 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 - 数据来源
 ![img.png](figs/img.png)
 
+- 对话数据生成
+  [利用chatglm根据文档生成对话数据](https://github.com/threeColorFr/LLMforDialogDataGenerate)
+
 ## TransGPT功能及示例输出
 
 1. **交通安全教育**：交通大模型可以用于生成交通安全教育材料，如安全驾驶的建议、交通规则的解释等。
