@@ -141,7 +141,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 | 模型          | 下载链接                              | 备注                                                                             |
 |:------------|-----------------------------------|--------------------------------------------------------------------------------|
-| TransGPT-6B | [link](https://huggingface.co/??) | Fine-tuned on the instruction-tuning data from part of [our data](https://?) ) |
+| TransGPT-7B | [link](https://huggingface.co/DUOMO-Lab/TransGPT-v0) | Fine-tuned on the instruction-tuning data from part of [our data](https://?) ) |
 
 
 ## 环境部署
@@ -151,17 +151,9 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 创建conda环境:
 ```
 conda env create -f environment.yml
-conda activate xxx
+conda activate transgpt
 ```
 
-
-## 使用先决条件
-
-首先 使用 `git-lfs`下载参数:
-```bash
-git lfs install
-git clone https://huggingface.co/??
-```
 
 ## 训练和推理
 
