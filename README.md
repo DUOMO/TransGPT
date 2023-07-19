@@ -186,7 +186,9 @@ sh pt.sh
 conda activate transgpt
 sh sft.sh
 ```
-
+说明：
+- pt训练脚本：采用了MedicalGPT提供的[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)]脚本。
+- sft脚本：采用了MedicalGPT提供的[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)脚本。
 ## 开源数据集
 ### 通用数据集
 
@@ -213,7 +215,7 @@ sh sft.sh
 * Pre-training: 8xA100 (80G)
 * Instruction Tuning: 8xA40 (45G)
 * Inference:
-Install package:
+####Install package:
 ```
 pip install sentencepiece
 pip install transformers>=4.28.0
