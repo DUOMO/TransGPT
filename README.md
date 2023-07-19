@@ -222,7 +222,7 @@ sh sft.sh
 * Pre-training: 8xA100 (80G)
 * Instruction Tuning: 8xA40 (45G)
 * Inference:
-####Install package:
+### Install package:
 ```
 pip install sentencepiece
 pip install transformers>=4.28.0
