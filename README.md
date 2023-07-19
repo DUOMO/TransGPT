@@ -150,6 +150,8 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 创建conda环境:
 ```
+git clone https://github.com/shibing624/TransGPT
+cd TransGPT
 conda env create -f environment.yml
 conda activate transgpt
 ```
