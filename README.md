@@ -42,8 +42,8 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 ## 最新发布
 - [07.18] ✨ 开源 [**TransGPT**](https://huggingface.co/DUOMO-Lab/TransGPT-v0) (💼 **可商用**).
-- [07.17] ✨ 开源 [**TransGPT-DATA-sft**](https://huggingface.co/DUOMO-Lab//TransGPT-sft) (💼**可商用**)
-- [07.17] ✨ 开源 [**TransGPT-DATA-pt**](https://huggingface.co/DUOMO-Lab//TransGPT-pt) (💼**可商用**)
+- [07.17] ✨ 开源 [**TransGPT-DATA-sft**](https://huggingface.co/DUOMO-Lab/TransGPT-sft) (💼**可商用**)
+- [07.17] ✨ 开源 [**TransGPT-DATA-pt**](https://huggingface.co/DUOMO-Lab/TransGPT-pt) (💼**可商用**)
 
 
 ## 目录
