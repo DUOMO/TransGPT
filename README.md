@@ -61,7 +61,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 | 内容     | 下载地址                            | 备注     |
 |:-------|---------------------------------|--------|
 | 预训练数据集 | [pretrain_data]([https://huggingface.co/data/pretrain](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-pt)) | 非对话数据集 |
-| 微调数据集  | [finetune_data]([https://huggingface.co/data/finetune](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-sft)) | 对话式数据集 |
+| 微调数据集  | [finetune_data]([https://huggingface.co/data/finetune](https://huggingface.co/datasets/iKING-ROC/TransGPT-sft)) | 对话式数据集 |
 
 - 数据来源
 ![img.png](figs/img.png)
