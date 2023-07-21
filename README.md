@@ -8,11 +8,11 @@
 <!-- **TransGPT** -->
 
 <p align="center">
-🤗 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-v0" target="_blank">TransGPT-6B</a> 
+🤗 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-v0" target="_blank">TransGPT-7B</a> 
   •
-🤖 <a href="https://github.com/DUOMO/TransGPT.git" target="_blank">DUOMO</a> 
+🤖 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-v0" target="_blank">DUOMO</a> 
   • 
-💬 <a href="https://github.com/DUOMO/inc_wechat.img" target="_blank">WeChat</a>
+💬 <a href="https://github.com/DUOMO/trans_wechat.jpg" target="_blank">WeChat</a>
 </p>
 
 <div style='display:flex; gap: 0.25rem; '>
@@ -31,7 +31,7 @@
 
 ## 摘要
 TransGPT是国内首款开源交通大模型，主要致力于在真实交通行业中发挥实际价值。它能够实现交通情况预测、智能咨询助手、公共交通服务、交通规划设计、交通安全教育、协助管理、交通事故报告和分析、自动驾驶辅助系统等功能。TransGPT作为一个通用常识交通大模型，可以为道路工程、桥梁工程、隧道工程、公路运输、水路运输、城市公共交通运输、交通运输经济、交通运输安全等行业提供通识常识。以此为基础，可以落脚到特定的交通应用场景中。
-- 模型：TransGPT-6B，
+- 模型：TransGPT-7B，
 - 代码：基本训练和推理代码，
 - 数据：
   - ～34.6万条文本数据（用于领域内预训练）
@@ -62,8 +62,8 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 | 内容       | 下载地址                            | 备注     |
 |:---------|---------------------------------|--------|
-| 领域预训练数据集 | [pretrain_data]([https://huggingface.co/data/pretrain](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-pt)) | 非对话数据集 |
-| 领域微调数据集  | [finetune_data]([https://huggingface.co/data/finetune](https://huggingface.co/datasets/iKING-ROC/TransGPT-sft)) | 对话式数据集 |
+| 领域预训练数据集 | [pretrain_data]([https://huggingface.co/datasets/DUOMO-Lab/TransGPT-pt](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-pt)) | 非对话数据集 |
+| 领域微调数据集  | [finetune_data]([https://huggingface.co/datasets/iKING-ROC/TransGPT-sft](https://huggingface.co/datasets/iKING-ROC/TransGPT-sft)) | 对话式数据集 |
 
 - 数据来源
 
@@ -143,7 +143,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 |             | 交通情况预测 | 交通规划 | 交通安全教育 | 事故报告和分析 |
 |-------------|:------:|:----:|:------:|:-------:|
-| TransGPT-6B |  1.33  | 9.95 |  9.84  |  3.50   |
+| TransGPT-7B |  1.33  | 9.95 |  9.84  |  3.50   |
 
 ## 模型下载
 
@@ -151,7 +151,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 | 模型          | 下载链接                              | 备注                                                                             |
 |:------------|-----------------------------------|--------------------------------------------------------------------------------|
-| TransGPT-6B | [DUOMO-Lab/TransGPT-v0](https://huggingface.co/DUOMO-Lab/TransGPT-v0) | Fine-tuned on the instruction-tuning data from part of [our data]([https://?](https://huggingface.co/datasets/iKING-ROC/TransGPT-sft) ) |
+| TransGPT-7B | [DUOMO-Lab/TransGPT-v0](https://huggingface.co/DUOMO-Lab/TransGPT-v0) | Fine-tuned on the instruction-tuning data from part of [our data]([https://huggingface.co/datasets/iKING-ROC/TransGPT-sft](https://huggingface.co/datasets/iKING-ROC/TransGPT-sft) ) |
 
 
 ## 环境部署
@@ -171,7 +171,8 @@ conda activate transgpt
 #### Pretraining
 
 ##### Data
-* [[link](https://huggingface.co/datasets/。。)]
+* [通用预训练数据集](#通用预训练数据集) 
+* [交通领域数据集](#交通领域数据集) 
   
 
 
@@ -196,8 +197,10 @@ sh pt.sh
 conda activate transgpt
 sh sft.sh
 ```
-说明：
+#### 说明：
+
 - pt训练代码：采用了MedicalGPT提供的[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)代码。
+
 - sft训练代码：采用了MedicalGPT提供的[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)代码。
 
 ## 推荐GPUs
@@ -258,7 +261,7 @@ Logo由[DreamStudio](https://beta.dreamstudio.ai/generate)生成🙏.
 
 ## 微信讨论群
 
-<img src="figs/wechat.png" alt="DUOMO" style="width: 260px;  "></a>
+<img src="figs/trans_wechat.jpg" alt="DUOMO" style="width: 260px;  "></a>
 
 
 ## 协议
