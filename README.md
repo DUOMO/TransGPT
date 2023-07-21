@@ -186,10 +186,6 @@ sh pt.sh
 
 #### Instruction Tuning
 
-##### Data
-*  [InstructBLIP](https://github.com/。。).
-
-
 ##### Script
 * 下载sft训练代码[[supervised_finetuning.py](https://github.com/shibing624/MedicalGPT/blob/main/supervised_finetuning.py)]
 * 下载sft.sh脚本[[run_sft.sh](https://github.com/shibing624/MedicalGPT/blob/main/run_sft.sh)]
