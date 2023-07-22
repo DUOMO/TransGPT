@@ -243,7 +243,58 @@ with torch.no_grad():
 output = tokenizer.decode(output_ids[0], skip_special_tokens=True)
 print(output.replace(text, '').strip())
 ```
+### langchin版本:
+```
+import os
+import torch
+from langchain.llms import HuggingFacePipeline
+from transformers import LlamaTokenizer, LlamaForCausalLM,pipeline
+from langchain import PromptTemplate,LLMChain
+from langchain.agents import load_tools, initialize_agent, AgentType, ZeroShotAgent, AgentExecutor
 
+os.environ["SERPAPI_API_KEY"]="your_key"
+
+
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
+template = """Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction:
+{question}
+
+### Response:"""
+prompt = PromptTemplate(template=template,input_variables=["question"])
+checkpoint='DUOMO-Lab/TransGPT-v0'
+tokenizer = LlamaTokenizer.from_pretrained(checkpoint)
+model = LlamaForCausalLM.from_pretrained(checkpoint).half().cuda()
+model.eval()
+
+pipe = pipeline(
+    "text-generation",
+    model=model,
+    tokenizer=tokenizer,
+    max_length=1024,
+    device="cuda:0",
+    temperature=1,
+    top_k=20,
+    top_p=0.9,
+    repetition_penalty=1.15
+)
+
+
+#加载工具
+local_llm = HuggingFacePipeline(pipeline=pipe)
+tools = load_tools(["serpapi"], llm=local_llm)
+
+
+
+llm_chain = LLMChain(llm=local_llm, prompt=prompt)
+agent = ZeroShotAgent(llm_chain=llm_chain, tools=tools, verbose=True)
+agent_chain = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)
+
+s="我想了解如何申请和更新驾驶证？"
+response = agent_chain.run(s)
+
+```
 Logo由[DreamStudio](https://beta.dreamstudio.ai/generate)生成🙏.
 
 ## 声明
