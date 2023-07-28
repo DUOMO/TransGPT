@@ -253,7 +253,7 @@ with torch.no_grad():
 output = tokenizer.decode(output_ids[0], skip_special_tokens=True)
 print(output.replace(text, '').strip())
 ```
-### langchin版本:
+### LangChain版本:
 ```
 import os
 import torch
