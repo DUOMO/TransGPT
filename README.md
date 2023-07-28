@@ -155,12 +155,13 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 ## DEMO
 [DEMO1](https://5a8cea8c24bba2fa01.gradio.live) 
+[DEMO2](https://b27dbb11c56f14492b.gradio.live)
 
 #### 说明：
 
 - 线上使用测试连接
-
 - 借助Gradio生成的简单demo，需要注意可能的掉线风险
+- 部署资源有限，人多后会有爆显存风险
 
 
 ## 环境部署
