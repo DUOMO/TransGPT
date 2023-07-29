@@ -155,7 +155,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 ## DEMO
 - [DEMO1](https://bc18ebd4c22f6cfb17.gradio.live)
-- [DEMO2](https://c8419c73c915599e50.gradio.live) 
+- [DEMO2](https://d7a24e72c1e7f12d9e.gradio.live) 
 
 #### 说明：
 
