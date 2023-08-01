@@ -24,7 +24,7 @@
 
 <h4 align="left">
     <p>
-        <a href="https://github.com/cocacola-lab/TransGPT.git/README.md">中文</a> |
+        <a href="https://github.com/DUOMO/TransGPT/blob/main/README.md">中文</a> |
         <b>English</b>
     </p>
 </h4>
