@@ -154,8 +154,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 | TransGPT-7B | [DUOMO-Lab/TransGPT-v0](https://huggingface.co/DUOMO-Lab/TransGPT-v0) | Fine-tuned on the instruction-tuning data from part of [our data]([https://huggingface.co/datasets/iKING-ROC/TransGPT-sft](https://huggingface.co/datasets/iKING-ROC/TransGPT-sft) ) |
 
 ## DEMO
-- [DEMO1](https://bc18ebd4c22f6cfb17.gradio.live)
-- [DEMO2](https://d7a24e72c1e7f12d9e.gradio.live) 
+- [DEMO1](https://8baca9dfb30a2452fe.gradio.live)
 
 #### 说明：
 
