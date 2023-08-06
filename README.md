@@ -66,13 +66,22 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 | 领域微调数据集  | [finetune_data](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-sft) | 对话式数据集 |
 
 - 数据来源
-
+  
+  a. 单模态
 <p float="left">
     <img src="figs/img.png" style="width: 60%; margin: auto;">
 </p>
 
-[//]: # (![img.png]&#40;figs/img.png&#41;)
 
+&emsp;&emsp; b. 多模态
+
+&emsp;&emsp;&emsp;&emsp;i. 交通标志大全  
+&emsp;&emsp;&emsp;&emsp;ii. 驾考题库  
+&emsp;&emsp;&emsp;&emsp;iii. 全球旅游景点  
+  
+
+
+  
 - 对话数据生成方法
   1. 从pdf、docx，doc格式文件中提取文档
   2. 利用LLM根据文档生成对话数据
