@@ -3,6 +3,44 @@ TransGPT-MM-V0是基于开源的清华[VisualGLM-6B](https://github.com/THUDM/Vi
 
 由[SwissArmyTransformer](https://github.com/THUDM/SwissArmyTransformer)(简称sat) 库训练，这是一个支持Transformer灵活修改、训练的工具库，支持Lora、P-tuning等参数高效微调方法。
 
+## 示例
+
+- 交通标志
+<p float="left">
+    <img src="examples/example_bz1.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="examples/example_bz2.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="examples/example_bz3.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="examples/example_bz4.png" style="width: 45%; margin: auto;">
+</p>
+
+- 交通规则
+<p float="left">
+    <img src="examples/example_tk1.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="examples/example_tk2.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="examples/example_tk3.png" style="width: 45%; margin: auto;">
+</p>
+
+- 景点
+<p float="left">
+    <img src="examples/example_jd1.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="examples/example_jd2.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="examples/example_jd3.png" style="width: 45%; margin: auto;">
+</p>
+
 ## 环境配置
 ```
 pip install -i https://mirrors.aliyun.com/pypi/simple/ -r requirements.txt
