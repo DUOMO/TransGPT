@@ -15,9 +15,7 @@ pip install .
 ## 微调
 下载数据得到collection文件夹
 
-下载模型后存放到merge_lora_p7_54000文件夹下
-
-运行如下命令：
+运行如下命令进行训练：
 ```
 bash finetune/finetune_visualglm.sh
 ```
@@ -47,13 +45,16 @@ args.mode = 'inference'
 from sat.training.model_io import save_checkpoint
 save_checkpoint(1, model, None, None, args)
 ```
+合并后得到模型`merge_lora_p7_54000`
 
 ## 推理
+从下载模型[TransGPT-MM](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0)，存放在merge_lora_p7_54000文件夹下
 
 - 终端形式
 ```
 python cli_demo.py --from_pretrained merge_lora_p7_54000/  --prompt_zh 图中的标志表示什么含义？
 ```
+![终端示例](examples/cli.png)
 
 - 普通示例
 ```
