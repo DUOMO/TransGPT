@@ -23,8 +23,8 @@ bash finetune/finetune_visualglm.sh
 
 目前支持三种方式的微调：
 
-LoRA：样例中为全部28层加入了rank=32的LoRA微调，可以根据具体情景和数据量调整--layer_range和--lora_rank参数。
-QLoRA：如果资源有限，可以考虑使用bash finetune/finetune_visualglm_qlora.sh，QLoRA将ChatGLM的线性层进行了4-bit量化，只需要9.8GB显存即可微调。
+LoRA：样例中为全部28层加入了rank=32的LoRA微调，可以根据具体情景和数据量调整--layer_range和--lora_rank参数。 ps: rank=8 range= 0 2 batch=4时，只需要15GB显存。  
+QLoRA：如果资源有限，可以考虑使用bash finetune/finetune_visualglm_qlora.sh，QLoRA将ChatGLM的线性层进行了4-bit量化，只需要9.8GB显存即可微调。  
 P-tuning：可以将--use_lora替换为--use_ptuning，不过不推荐使用，除非模型应用场景非常固定。
 
 如果希望把LoRA部分的参数合并到原始的权重，可以运行如下代码：
