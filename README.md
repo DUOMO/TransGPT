@@ -10,6 +10,8 @@
 <p align="center">
 🤗 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-v0" target="_blank">TransGPT-7B</a> 
   •
+🤗 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0" target="_blank">TransGPT-MM-6B</a> 
+  •
 🤖 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-v0" target="_blank">DUOMO</a> 
   • 
 💬 <a href="https://github.com/DUOMO/trans_wechat.jpg" target="_blank">WeChat</a>
@@ -31,7 +33,7 @@
 
 ## 摘要
 TransGPT是国内首款开源交通大模型，主要致力于在真实交通行业中发挥实际价值。它能够实现交通情况预测、智能咨询助手、公共交通服务、交通规划设计、交通安全教育、协助管理、交通事故报告和分析、自动驾驶辅助系统等功能。TransGPT作为一个通用常识交通大模型，可以为道路工程、桥梁工程、隧道工程、公路运输、水路运输、城市公共交通运输、交通运输经济、交通运输安全等行业提供通识常识。以此为基础，可以落脚到特定的交通应用场景中。
-- 模型：TransGPT-7B，
+- 模型：TransGPT-7B，TransGPT-MM-6B
 - 代码：基本训练和推理代码，
 - 数据：
   - ～34.6万条文本数据（用于领域内预训练）
