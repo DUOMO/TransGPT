@@ -148,9 +148,42 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 </p>
 
 ### 多模态
+- 交通标志
 <p float="left">
-    <img src="multi_modal/examples/" style="width: 45%; margin: auto;">
+    <img src="multi_modal/examples/example_bz1.png" style="width: 45%; margin: auto;">
 </p>
+<p float="left">
+    <img src="multi_modal/examples/example_bz2.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="multi_modal/examples/example_bz3.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="multi_modal/examples/example_bz4.png" style="width: 45%; margin: auto;">
+</p>
+
+- 交通规则
+<p float="left">
+    <img src="multi_modal/examples/example_tk1.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="multi_modal/examples/example_tk2.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="multi_modal/examples/example_tk3.png" style="width: 45%; margin: auto;">
+</p>
+
+- 景点
+<p float="left">
+    <img src="multi_modal/examples/example_jd1.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="multi_modal/examples/example_jd2.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="multi_modal/examples/example_jd3.png" style="width: 45%; margin: auto;">
+</p>
+
 
 ## 评测
 
@@ -167,6 +200,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 | 模型          | 下载链接                              | 备注                                                                             |
 |:------------|-----------------------------------|--------------------------------------------------------------------------------|
 | TransGPT-7B | [DUOMO-Lab/TransGPT-v0](https://huggingface.co/DUOMO-Lab/TransGPT-v0) | Fine-tuned on the instruction-tuning data from part of [our data]([https://huggingface.co/datasets/iKING-ROC/TransGPT-sft](https://huggingface.co/datasets/iKING-ROC/TransGPT-sft) ) |
+| TransGPT-MM-6B | [DUOMO-Lab/TransGPT-MM-v0](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0) | - |
 
 ## DEMO
 - [DEMO1](https://e83902eeb23dd085aa.gradio.live)
