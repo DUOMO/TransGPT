@@ -10,7 +10,7 @@ MODEL_TYPE="visualglm-6b"
 MODEL_ARGS="--max_source_length 64 \
     --max_target_length 256 \
     --lora_rank 32 \
-    --layer_range 0 2 4 6 8 10 12 14 16 18 20 22 24 26 \
+    --layer_range 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 \
     --pre_seq_len 4"
 
 # OPTIONS_SAT="SAT_HOME=$1" #"SAT_HOME=/raid/dm/sat_models"
@@ -26,7 +26,7 @@ gpt_options=" \
        --experiment-name finetune-$MODEL_TYPE \
        --model-parallel-size ${MP_SIZE} \
        --mode finetune \
-       --train-iters 50000 \
+       --train-iters 60000 \
        --resume-dataloader \
        $MODEL_ARGS \
        --train-data ${train_data} \
