@@ -41,6 +41,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 
 ## 最新发布
+- [08.07] ✨ 开源 [**TransGPT-MM**](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0).
 - [07.18] ✨ 开源 [**TransGPT**](https://huggingface.co/DUOMO-Lab/TransGPT-v0).
 - [07.17] ✨ 开源 [**TransGPT-DATA-sft**](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-sft) (💼**可商用**)
 - [07.17] ✨ 开源 [**TransGPT-DATA-pt**](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-pt) (💼**可商用**)
@@ -144,6 +145,11 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 6. *交通政策研究**：大型交通大模型可以用于分析公众对于交通政策的反馈，或者生成关于交通政策影响的报告。这可以帮助政策制定者更好地了解政策的实际效果。
 <p float="left">
     <img src="figs/6.gif" style="width: 45%; margin: auto;">
+</p>
+
+### 多模态
+<p float="left">
+    <img src="multi_modal/examples/" style="width: 45%; margin: auto;">
 </p>
 
 ## 评测
