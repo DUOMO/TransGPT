@@ -56,11 +56,11 @@ save_checkpoint(1, model, None, None, args)
 从[TransGPT-MM-v0](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0)下载模型，存放在merge_lora_p7_54000文件夹下  
 从[TransGPT-MM-v1](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v1)下载模型，存放在merge_lora_p14_12000文件夹下
 
-ps:或者重命名为任何名字。
+ps:或者重命名为任何名字，放在一定路径下。
 - 终端形式
 ```
 python cli_demo.py --from_pretrained your-model-path  --prompt_zh 图中的标志表示什么含义？
-# your-model-path 为命名的模型路径，比如merge_lora_p14_12000
+# your-model-path 为的模型路径，比如merge_lora_p14_12000 或TransGPT-MM-v1 或./PLM/TransGPT-MM-v1
 ```
 ![终端示例](examples/cli.png)
 
