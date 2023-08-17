@@ -10,7 +10,7 @@
 <p align="center">
 🤗 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-v0" target="_blank">TransGPT-7B</a> 
   •
-🤗 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0" target="_blank">TransGPT-MM-6B</a> 
+🤗 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-MM-v1" target="_blank">TransGPT-MM-6B</a> 
   •
 🤖 <a href="https://huggingface.co/DUOMO-Lab/TransGPT-v0" target="_blank">DUOMO</a> 
   • 
@@ -43,7 +43,8 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 
 ## 最新发布
-- [08.07] ✨ 开源 [**TransGPT-MM**](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0) 多模态交通大模型.
+- [08.07] ✨ 开源 [**TransGPT-MM-v1**](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v1) 多模态交通大模型v1版本,泛化性通用性更强.
+- [08.07] ✨ 开源 [**TransGPT-MM-v0**](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0) 多模态交通大模型v0版本.
 - [07.18] ✨ 开源 [**TransGPT**](https://huggingface.co/DUOMO-Lab/TransGPT-v0).
 - [07.17] ✨ 开源 [**TransGPT-DATA-sft**](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-sft) (💼**可商用**)
 - [07.17] ✨ 开源 [**TransGPT-DATA-pt**](https://huggingface.co/datasets/DUOMO-Lab/TransGPT-pt) (💼**可商用**)
