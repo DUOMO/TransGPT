@@ -1,5 +1,5 @@
 ## 介绍
-TransGPT-MM-V0是基于开源的清华[VisualGLM-6B](https://github.com/THUDM/VisualGLM-6B)为backbone，在交通领域数据集上进行微调。
+TransGPT-MM是基于开源的清华[VisualGLM-6B](https://github.com/THUDM/VisualGLM-6B)为backbone，在交通领域数据集上进行微调。
 
 由[SwissArmyTransformer](https://github.com/THUDM/SwissArmyTransformer)(简称sat) 库训练，这是一个支持Transformer灵活修改、训练的工具库，支持Lora、P-tuning等参数高效微调方法。
 
@@ -49,8 +49,8 @@ save_checkpoint(1, model, None, None, args)
 合并后得到模型`merge_lora_p7_54000`
 
 ## 推理
-从下载模型[TransGPT-MM](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0)，存放在merge_lora_p7_54000文件夹下
-
+从[TransGPT-MM-v0](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0)下载模型，存放在merge_lora_p7_54000文件夹下  
+从[TransGPT-MM-v1](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v1)下载模型，存放在merge_lora_p14_12000文件夹下
 - 终端形式
 ```
 python cli_demo.py --from_pretrained merge_lora_p7_54000/  --prompt_zh 图中的标志表示什么含义？
@@ -122,6 +122,9 @@ python web_demo.py
 <p float="left">
     <img src="examples/example_tk3.png" style="width: 45%; margin: auto;">
 </p>
+<p float="left">
+    <img src="examples/example_tk4.png" style="width: 45%; margin: auto;">
+</p>
 
 - 景点
 <p float="left">
@@ -132,5 +135,8 @@ python web_demo.py
 </p>
 <p float="left">
     <img src="examples/example_jd3.png" style="width: 45%; margin: auto;">
+</p>
+<p float="left">
+    <img src="examples/example_jd4.png" style="width: 45%; margin: auto;">
 </p>
 
