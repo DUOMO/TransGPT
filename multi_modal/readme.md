@@ -55,9 +55,12 @@ save_checkpoint(1, model, None, None, args)
 ## 推理
 从[TransGPT-MM-v0](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0)下载模型，存放在merge_lora_p7_54000文件夹下  
 从[TransGPT-MM-v1](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v1)下载模型，存放在merge_lora_p14_12000文件夹下
+
+ps:或者重命名为任何名字。
 - 终端形式
 ```
-python cli_demo.py --from_pretrained merge_lora_p7_54000/  --prompt_zh 图中的标志表示什么含义？
+python cli_demo.py --from_pretrained your-model-path  --prompt_zh 图中的标志表示什么含义？
+# your-model-path 为命名的模型路径，比如merge_lora_p14_12000
 ```
 ![终端示例](examples/cli.png)
 
@@ -74,7 +77,7 @@ from model import chat, VisualGLMModel
 #model, model_args = VisualGLMModel.from_pretrained('visualglm-6b', args=argparse.Namespace(fp16=True, skip_init=True))
 from sat.model import AutoModel
 model, model_args = AutoModel.from_pretrained(
-        'merge_lora_p7_54000',
+        'merge_lora_p7_54000', # your-model-path
         args=argparse.Namespace(
         fp16=True,
         skip_init=True,
@@ -96,7 +99,7 @@ print(response) # 当心中毒
 ```
 python web_demo.py
 ```
-程序会运行一个Web Server，并输出地址。在浏览器中打开输出的地址即可使用。（通过修改model/infer_util.py中的模型名称加载不同模型）
+程序会运行一个Web Server，并输出地址。在浏览器中打开输出的地址即可使用。（通过修改model/infer_util.py中的模型路径加载不同模型）
 
 ![web demo](examples/web.png)
 
