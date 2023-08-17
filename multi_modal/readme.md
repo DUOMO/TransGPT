@@ -3,6 +3,10 @@ TransGPT-MM是基于开源的清华[VisualGLM-6B](https://github.com/THUDM/Visua
 
 由[SwissArmyTransformer](https://github.com/THUDM/SwissArmyTransformer)(简称sat) 库训练，这是一个支持Transformer灵活修改、训练的工具库，支持Lora、P-tuning等参数高效微调方法。
 
+| 模型          | 下载链接                              | 备注                                                                             |
+|:------------|-----------------------------------|--------------------------------------------------------------------------------|
+| TransGPT-MM-6B-v0 | [DUOMO-Lab/TransGPT-MM-v0](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0) | |
+| TransGPT-MM-6B-v1 | [DUOMO-Lab/TransGPT-MM-v1](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v1) | 改进版本，通用性专用性更强|
 
 ## 环境配置
 ```
@@ -14,7 +18,7 @@ pip install .
 ```
 
 ## 微调
-下载数据得到collection文件夹
+下载数据（暂未开放）得到collection文件夹
 
 运行如下命令进行训练：
 ```
