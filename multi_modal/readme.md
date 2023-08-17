@@ -96,7 +96,7 @@ print(response) # 当心中毒
 ```
 python web_demo.py
 ```
-程序会运行一个Web Server，并输出地址。在浏览器中打开输出的地址即可使用。
+程序会运行一个Web Server，并输出地址。在浏览器中打开输出的地址即可使用。（通过修改model/infer_util.py中的模型名称加载不同模型）
 
 ![web demo](examples/web.png)
 
