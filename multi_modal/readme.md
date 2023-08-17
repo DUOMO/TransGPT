@@ -53,10 +53,7 @@ save_checkpoint(1, model, None, None, args)
 合并后得到模型`merge_lora_p7_54000`
 
 ## 推理
-从[TransGPT-MM-v0](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v0)下载模型，存放在merge_lora_p7_54000文件夹下  
-从[TransGPT-MM-v1](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v1)下载模型，存放在merge_lora_p14_12000文件夹下
-
-ps:或者重命名为任何名字，放在一定路径下。
+下载模型，存放在一定路径下。
 - 终端形式
 ```
 python cli_demo.py --from_pretrained your-model-path  --prompt_zh 图中的标志表示什么含义？
