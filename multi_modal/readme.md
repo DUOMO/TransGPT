@@ -100,6 +100,9 @@ python web_demo.py
 
 ![web demo](examples/web.png)
 
+## Demo
+[v1版本](https://huggingface.co/spaces/DUOMO-Lab/TransGPT-MM)
+
 ## 示例
 
 - 交通标志
