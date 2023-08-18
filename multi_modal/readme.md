@@ -57,7 +57,7 @@ save_checkpoint(1, model, None, None, args)
 - 终端形式
 ```
 python cli_demo.py --from_pretrained your-model-path  --prompt_zh 图中的标志表示什么含义？
-# your-model-path 为的模型路径，比如merge_lora_p14_12000 或TransGPT-MM-v1 或./PLM/TransGPT-MM-v1
+# your-model-path 为的模型路径，比如TransGPT-MM-v1 或./PLM/TransGPT-MM-v1或merge_lora_p14_12000 
 ```
 ![终端示例](examples/cli.png)
 
