@@ -121,7 +121,7 @@ python web_demo.py
 
 - 交通规则
 <p float="left">
-    <img src="examples/example_tk1.png" style="width: 45%; margin: auto;">
+    <img src="examples/example_tk4.png" style="width: 45%; margin: auto;">
 </p>
 <p float="left">
     <img src="examples/example_tk2.png" style="width: 45%; margin: auto;">
@@ -129,9 +129,7 @@ python web_demo.py
 <p float="left">
     <img src="examples/example_tk3.png" style="width: 45%; margin: auto;">
 </p>
-<p float="left">
-    <img src="examples/example_tk4.png" style="width: 45%; margin: auto;">
-</p>
+
 
 - 景点
 <p float="left">
