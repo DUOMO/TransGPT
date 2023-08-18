@@ -167,7 +167,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 
 - 交通规则
 <p float="left">
-    <img src="multi_modal/examples/example_tk1.png" style="width: 45%; margin: auto;">
+    <img src="multi_modal/examples/example_tk4.png" style="width: 45%; margin: auto;">
 </p>
 <p float="left">
     <img src="multi_modal/examples/example_tk2.png" style="width: 45%; margin: auto;">
@@ -175,19 +175,16 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 <p float="left">
     <img src="multi_modal/examples/example_tk3.png" style="width: 45%; margin: auto;">
 </p>
-<p float="left">
-    <img src="multi_modal/examples/example_tk4.png" style="width: 45%; margin: auto;">
-</p>
 
 - 景点
 <p float="left">
-  <img src="multi_modal/examples/example_jd4.png" style="width: 45%; margin: auto;">
+  <img src="multi_modal/examples/example_jd2.png" style="width: 45%; margin: auto;">
 </p>
 <p float="left">
     <img src="multi_modal/examples/example_jd1.png" style="width: 45%; margin: auto;">
 </p>
 <p float="left">
-    <img src="multi_modal/examples/example_jd2.png" style="width: 45%; margin: auto;">
+    <img src="multi_modal/examples/example_jd4.png" style="width: 45%; margin: auto;">
 </p>
 <p float="left">
     <img src="multi_modal/examples/example_jd3.png" style="width: 45%; margin: auto;">
