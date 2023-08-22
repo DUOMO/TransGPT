@@ -210,7 +210,7 @@ TransGPT是国内首款开源交通大模型，主要致力于在真实交通行
 | TransGPT-MM-6B-v1 | [DUOMO-Lab/TransGPT-MM-v1](https://huggingface.co/DUOMO-Lab/TransGPT-MM-v1) | **Fine-tune, Inference and DEMO** refer to [MM](https://github.com/DUOMO/TransGPT/blob/main/multi_modal/readme.md) |
 
 ## DEMO
-- [DEMO1](https://github.com/DUOMO/TransGPT)
+- [DEMO1](https://f3ac03d4a955cd3de7.gradio.live)
 
 #### 说明：
 
